@@ -32,12 +32,22 @@ export function StudentInfo() {
             <strong>ข้อมูลนักศึกษา</strong>
           </DrawerTitle>
           <DrawerDescription>Student information</DrawerDescription>
-          <img src="" alt="" />
         </DrawerHeader>
         <div className="flex-1 p-4">
+          <img src="../public/profile.png" alt="..." />
           <div className="size-full rounded-2xl bg-muted" />
         </div>
+        <div className="flex-1 p-4">
+          <DrawerTitle>Traipop Wichiansarn</DrawerTitle>
+          <DrawerDescription>
+            นักศึกษาคณะวิศวกรรมศาสตร์ สาขาวิศวกรรมคอมพิวเตอร์
+            มหาวิทยาลัยเชียงใหม่
+          </DrawerDescription>
+        </div>
         <DrawerFooter>
+          <DrawerTitle>
+            <strong>รหัสนักศึกษา : 680610676</strong>
+          </DrawerTitle>
           <DrawerClose render={<Button>Close</Button>} />
         </DrawerFooter>
       </DrawerContent>
