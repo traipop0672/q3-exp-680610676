@@ -73,7 +73,6 @@ export const useItemStore = create<ItemState>()(
             ...state.expenses,
           ],
         })),
-      
     }),
     {
       // Unique key name for the localStorage entry

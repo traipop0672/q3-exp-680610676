@@ -14,6 +14,7 @@ import { Trash } from "lucide-react";
 
 export function ItemList() {
   const { expenses } = useItemStore();
+  //  const removeItem = useItemStore((s) => s.removeItem);
 
   return (
     <Card>

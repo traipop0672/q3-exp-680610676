@@ -1,5 +1,6 @@
 import { useItemStore } from "@/store/dataStore";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { AddItemDialog } from "./AddItemDialog";
 
 export function OverviewCards() {
   const expenses = useItemStore((state) => state.expenses);
@@ -12,7 +13,9 @@ export function OverviewCards() {
           <CardTitle className="text-sm font-medium">Total Spent</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="text-2xl text-red-500 font-bold">฿...</div>
+          <div className="text-2xl text-red-500 font-bold">
+            {AddItemDialog.length}
+          </div>
         </CardContent>
       </Card>
       <Card>
@@ -30,7 +33,9 @@ export function OverviewCards() {
           <CardTitle className="text-sm font-medium">Average Expense</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="text-2xl text-green-700 font-bold">...</div>
+          <div className="text-2xl text-green-700 font-bold">
+            {AddItemDialog.length}
+          </div>
         </CardContent>
       </Card>
     </div>
